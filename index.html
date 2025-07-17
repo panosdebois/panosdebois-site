@@ -7,7 +7,6 @@
   <title>Panos De Bois</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
     body {
       margin: 0;
@@ -35,16 +34,25 @@
       color: #555;
     }
 
+    .icons {
+      display: flex;
+      gap: 30px;
+    }
+
     .icons a {
-      margin: 0 15px;
       text-decoration: none;
       color: #111;
-      font-size: 1.8em;
-      transition: color 0.3s ease;
+      transition: opacity 0.3s ease;
     }
 
     .icons a:hover {
-      color: #888;
+      opacity: 0.6;
+    }
+
+    svg {
+      width: 32px;
+      height: 32px;
+      fill: currentColor;
     }
   </style>
 </head>
@@ -53,10 +61,14 @@
   <p>In quiet moments, something takes shape.</p>
   <div class="icons">
     <a href="https://instagram.com/panosdebois" target="_blank" title="Instagram">
-      <i class="fab fa-instagram"></i>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <path d="M224,202.66A53.34,53.34,0,1,0,277.34,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.78-30.78C296.63,124.12,224,124,224,124s-72.63.12-93.93,6.92a54,54,0,0,0-30.78,30.78C93.12,145.37,93,224,93,224s.12,78.63,6.92,99.93a54,54,0,0,0,30.78,30.78C151.37,353.88,224,354,224,354s72.63-.12,93.93-6.92a54,54,0,0,0,30.78-30.78c6.8-21.3,6.92-99.93,6.92-99.93S355.51,145.37,348.71,161.71ZM224,338A114,114,0,1,1,338,224,114.13,114.13,0,0,1,224,338Zm117.6-206.4a26.67,26.67,0,1,1-26.67-26.67A26.68,26.68,0,0,1,341.6,131.6ZM224,0C100.29,0,0,100.29,0,224S100.29,448,224,448,448,347.71,448,224,347.71,0,224,0Z"/>
+      </svg>
     </a>
     <a href="mailto:panosdebois@gmail.com" title="Email">
-      <i class="fas fa-envelope"></i>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path d="M502.3 190.8L327.4 338.7c-15.5 13.5-37.8 13.5-53.4 0L9.7 190.8C3.6 185.4 0 177.9 0 170V144c0-26.5 21.5-48 48-48h416c26.5 0 48 21.5 48 48v26c0 7.9-3.6 15.4-9.7 20.8zM480 112H32c-8.8 0-16 7.2-16 16v2.4l214.1 186.1c16.3 14.2 39.7 14.2 56 0L496 130.4V128c0-8.8-7.2-16-16-16z"/>
+      </svg>
     </a>
   </div>
 </body>
