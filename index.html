@@ -6,38 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Panos De Bois – Coming Soon</title>
   <style>
-    html, body {
+    body, html {
       margin: 0;
       padding: 0;
+      background: #fff;
       height: 100%;
+      overflow: hidden;
     }
-    .container {
-      position: relative;
-      width: 100vw;
-      height: 100vh;
-      background: url('coming-soon.png') no-repeat center center;
-      background-size: cover;
-    }
-    a.clickable {
-      position: absolute;
-      width: 60px;
-      height: 60px;
-      z-index: 10;
-    }
-    .instagram {
-      left: 5%;
-      bottom: 5%;
-    }
-    .email {
-      right: 5%;
-      bottom: 5%;
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <a href="https://instagram.com/panosdebois" class="clickable instagram" target="_blank" title="Instagram"></a>
-    <a href="mailto:panosdebois@gmail.com" class="clickable email" title="Email"></a>
-  </div>
+  <img src="coming-soon.png" usemap="#contactmap" alt="Panos De Bois Coming Soon" />
+
+  <map name="contactmap">
+    <!-- Instagram icon: αριστερό από το κέντρο -->
+    <area shape="rect" coords="910,940,960,990" href="https://instagram.com/panosdebois" alt="Instagram" target="_blank" />
+
+    <!-- Email icon: δεξί από το κέντρο -->
+    <area shape="rect" coords="970,940,1020,990" href="mailto:panosdebois@gmail.com" alt="Email" />
+  </map>
 </body>
 </html>
