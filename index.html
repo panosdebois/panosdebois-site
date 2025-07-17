@@ -4,40 +4,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Panos De Bois – Coming Soon</title>
+  <title>Panos De Bois</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
-    html, body {
+    body {
       margin: 0;
       padding: 0;
-      height: 100%;
-    }
-    .container {
-      position: relative;
-      width: 100vw;
+      font-family: 'Playfair Display', serif;
+      background-color: #fff;
+      color: #111;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       height: 100vh;
-      background: url('coming-soon.png') no-repeat center center;
-      background-size: cover;
+      text-align: center;
     }
-    a.clickable {
-      position: absolute;
-      width: 60px;
-      height: 60px;
-      z-index: 10;
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.2em;
     }
-    .instagram {
-      left: 5%;
-      bottom: 5%;
+
+    p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.2em;
+      margin-bottom: 2em;
+      color: #555;
     }
-    .email {
-      right: 5%;
-      bottom: 5%;
+
+    .icons a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #111;
+      font-size: 1.8em;
+      transition: color 0.3s ease;
+    }
+
+    .icons a:hover {
+      color: #888;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <a href="https://instagram.com/panosdebois" class="clickable instagram" target="_blank" title="Instagram"></a>
-    <a href="mailto:panosdebois@gmail.com" class="clickable email" title="Email"></a>
+  <h1>PANOS DE BOIS</h1>
+  <p>In quiet moments, something takes shape.</p>
+  <div class="icons">
+    <a href="https://instagram.com/panosdebois" target="_blank" title="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="mailto:panosdebois@gmail.com" title="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
   </div>
 </body>
 </html>
